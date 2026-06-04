@@ -29,6 +29,7 @@ let name = "kamalakar";
 
 function greet() {
     console.log(name);
+    console.log()
 
 }
 greet();
