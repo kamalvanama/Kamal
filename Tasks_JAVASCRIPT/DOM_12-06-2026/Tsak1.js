@@ -48,3 +48,19 @@ console.log(element.textContent);
   <li class="fruit">Mango</li>
 </ul>
 
+
+// Read DOM Properties
+const heading = document.getElementById("title");
+
+console.log(heading.textContent); 
+console.log(heading.id);         
+
+// Modify DOM Properties
+const heading = document.getElementById("title");
+
+heading.textContent = "Welcome to JavaScript";
+
+const image = document.getElementById("photo");
+
+image.src = "new.jpg";
+image.alt = "New Image";

@@ -40,5 +40,35 @@
   <li class="fruit">Mango</li>
 </ul>
 
+<p id="message">Good Morning</p>
+<button onclick="changeText()">Click Me</button>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+
+    <h1 id="heading">Welcome</h1>
+    <p id="message">Click the button to change this text.</p>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const message = document.getElementById("message");
+        const button = document.getElementById("btn");
+
+        button.addEventListener("click", function() {
+            heading.textContent = "Hello JavaScript!";
+            message.textContent = "The text has been changed.";
+            heading.style.color = "blue";
+            message.style.fontSize = "20px";
+        });
+    </script>
+
+</body>
+</html>
+
 </body>
 </html>
