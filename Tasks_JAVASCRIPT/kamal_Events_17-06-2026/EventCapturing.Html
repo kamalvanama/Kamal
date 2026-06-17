@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="parent" style="padding:30px; background:lightblue;">
+    Parent
+    <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("parent").addEventListener(
+    "click",
+    function() {
+        alert("Parent clicked");
+    },
+    true   // Event Capturing enabled
+);
+
+document.getElementById("child").addEventListener(
+    "click",
+    function() {
+        alert("Button clicked");
+    },
+    true   // Event Capturing enabled
+);
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="grandparent" style="padding:20px; background:lightgreen;">
+    Grandparent
+    <div id="parent" style="padding:20px; background:lightblue;">
+        Parent
+        <button id="child">Click</button>
+    </div>
+</div>
+
+<script>
+document.getElementById("grandparent").addEventListener(
+    "click",
+    () => console.log("Grandparent"),
+    true
+);
+
+document.getElementById("parent").addEventListener(
+    "click",
+    () => console.log("Parent"),
+    true
+);
+
+document.getElementById("child").addEventListener(
+    "click",
+    () => console.log("Child"),
+    true
+);
+</script>
+
+</body>
+</html>
+
+// execution flow of bubbling and capturing
+
+<div id="grandparent">
+    Grandparent
+    <div id="parent">
+        Parent
+        <button id="child">Click Me</button>
+    </div>
+</div>
+
+// Event delegation
+
+<ul id="fruits">
+  <li>Apple</li>
+  <li>Mango</li>
+  <li>Orange</li>
+</ul>
+
+<script>
+const fruitList = document.getElementById("fruits");
+
+fruitList.addEventListener("click", (event) => {
+  if (event.target.tagName === "LI") {
+    alert("You clicked: " + event.target.innerText);
+  }
+});
+</script>
+
+<ul id="menu">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+
+<script>
+document.getElementById("menu").addEventListener("click", function(event) {
+  if (event.target.tagName === "LI") {
+    console.log("Selected:", event.target.innerText);
+  }
+});
+</script>

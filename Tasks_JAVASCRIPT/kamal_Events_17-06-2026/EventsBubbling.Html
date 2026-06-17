@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./Events.js"></script>
+
+    <title>Event Bubbling Example</title>
+    <div id="parent" style="padding:50px;background-color:lightgreen;"></div>
+    parent <div>
+        <button id="child">Click me</button>
+    </div>
+    
+    <script>
+
+        document.getElementById("parent").addEventListener("click", function() {
+            alert("parent Div clicked");
+        });
+
+        document.getElementById("child").addEventListener("click", function() {
+            alert("Button Clicked");
+        });
+
+    </script>
+
+// button inside card
+
+<div id="card" style="padding:50px; background-color: black;">
+    product card
+    <button id="buybtn">buy now</button>
+    
+    <script>
+ 
+// Event Capturing 
