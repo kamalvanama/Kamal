@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>document.write()</h1>
+<body>
+
+<script>document.write("Hello, JavaScript!");
+</script>
+
+<h2>Display Multiple Lines</h2>
+
+<script>
+    document.write("Welcome to JavaScript<br>");
+
+    document.write("Learning document.write()<br>");
+
+    document.write("Have a nice day!");
+</script>
+
+<h3>Display Variables</h3>
+
+<script>
+    let Person = "Kamalakar";
+    let age = 21;
+
+    document.write("Person: " + Person + "<br>");
+    document.write("Age: " + age);
+</script>
+
+<h1>INNER HTML</h1>
+<br> To Display Text</body>
+<h2 id="demo"></h2>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello, JavaScript!";
+
+</script>
+
+<h3>To Display Variables</h3>
+<p id="name"></p>
+
+<script>
+let student = "Kamal";
+
+document.getElementById("name").innerHTML = "Student Name: " + student;
+</script>
+
+
+<h2>Student Report</h2>
+
+<p id="report"></p>
+
+<script>
+let Student = "Rahul";
+let marks = 82;
+
+let result = (marks >= 35) ? "Pass" : "Fail";
+
+document.getElementById("report").innerHTML =
+"Name: " + student + "<br>" +
+"Marks: " + marks + "<br>" +
+"Result: " + result;
+</script>
+
+
+<h1>ALERT()</h1>
+
+<h2>Display a Message</h2>
+
+<script>alert("some where on earth")</script>
+
+<h3>Display Variables</h3>
+
+<script>
+    let Name1= "mahesh babu"
+    alert("welcome," + Name1);
+</script>
+
+
+
+    <script src="./Kamal.js"></script>
+
+
+</body>
+</html>

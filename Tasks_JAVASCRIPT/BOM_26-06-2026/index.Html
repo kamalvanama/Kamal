@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>WINDOW OBJECT USING WINDOW.ALERT()</h1>
+<button onclick="showAlert()">Click Me</button>
+
+<script>
+function showAlert() {
+    window.alert("Welcome to JavaScript!");
+}
+</script>
+
+<h2>USING window.prompt()</h2>
+
+<button onclick="getName()">Enter Name</button>
+
+<script>
+function getName() {
+    let name = window.prompt("Enter your name:");
+    alert("Hello, " + name + "!");
+}
+</script>
+
+<h3>USING window.settimeout()</h3>
+
+<script>
+window.setTimeout(function () {
+    alert("This message appears after 3 seconds.");
+}, 3000);
+</script>
+
+<h1>NAVIGATOR METHOD</h1>
+<h2>Using navigator.userAgent</h2>
+
+<button onclick="showBrowser()">Show Browser Info</button>
+
+<script>
+function showBrowser() {
+    alert(navigator.userAgent);
+}
+</script>
+
+<h3>using navigator.languaage</h3>
+
+<button onclick="showLanguage()">Show Language</button>
+
+<script>
+function showLanguage() {
+    alert("Language: " + navigator.language);
+}
+</script>
+
+<h1>USING LOCATION METHOD</h1>
+<h2>by using location.hostname</h2>
+
+<button onclick="showHost()">Show Hostname</button>
+
+<script>
+function showHost() {
+    alert(location.hostname);
+}
+</script>
+
+<h3>by using location.protocol</h3>
+
+<button onclick="showProtocol()">Show Protocol</button>
+
+<script>
+function showProtocol() {
+    alert(location.protocol);
+}
+</script>
+
+<h4>by using location.reload()</h4>
+<button onclick="reloadPage()">Reload Page</button>
+
+<script>
+function reloadPage() {
+    location.reload();
+}
+</script>
+
+<h1>USING HISTORY METHOD</h1>
+<h2>by using history.back()</h2>
+
+<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    history.back();
+}
+</script>
+
+<h3>by using history.forward()</h3>
+<button onclick="goForward()">Go Forward</button>
+
+<script>
+function goForward() {
+    history.forward();
+}
+</script>
+
+<h4>by using history.go</h4>
+<button onclick="goPrevious()">Previous Page</button>
+<button onclick="goNext()">Next Page</button>
+
+<script>
+function goPrevious() {
+    history.go(-1);
+}
+
+function goNext() {
+    history.go(1);
+}
+</script>
+
+
+
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
