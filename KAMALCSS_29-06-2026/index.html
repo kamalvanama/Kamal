@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./index.css">
+<title>inline CSS</title>
+
+</head>
+<style>
+    div {
+        background-color: black;
+    }
+
+</style>
+
+<body>
+    <div>INTRODUCTION TO CSS</div>
+
+<h1>Welcome to my Website</h1>
+<p>this is a CSS program</p>
+
+<title>LILINE CSS</title>
+
+   <h1 style="color: blue;">Welcome to CSS</h1>
+    <p style="font-size: 18px;">This is an inline CSS example.</p>
+
+
+    <title>internal CSS</title>
+
+
+     <title>Internal CSS</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+
+<title>EXTERNAL CSS</title>
+ 
+    
+</head>
+<body>
+    <h1>Some where on the planat</h1>
+
+    <p>This is an external CSS example.</p>
+
+<title>Universal Selector</title>
+
+<p>Clean code changes everything</p>
+<p>your logic build the world</p>
+
+  <title>Element Selector Example</title>
+
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+
+     <h1>Welcome to Univers</h1>
+
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+
+ <title>Class Selector Example</title>
+
+    <style>
+        .highlight {
+            color: white;
+            background-color: blue;
+            padding: 10px;
+        }
+    </style>
+
+
+    <h2 class="highlight">Welcome to world</h2>
+
+    <p class="highlight">This paragraph uses the highlight class.</p>
+
+    <p>This paragraph has no class.</p>
+
+ <title>ID Selector Example</title>
+
+    <style>
+        #heading {
+            color: red;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+    <h1>Todays bug is tomorrows feature</h1>
+
+    <p>This is a normal paragraph.</p>
+
+    <title>Group Selector Example</title>
+
+    <style>
+        h1, h2, p {
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+  <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <p>This is a paragraph.</p>
+
+
+       <title>Descendant Selector Example</title>
+
+    <style>
+        div p {
+            color: purple;
+            font-size: 18px;
+        }
+    </style>
+
+<div>
+        <p>This paragraph is inside the div.</p>
+        <section>
+            <p>This paragraph is also inside the div.</p>
+        </section>
+    </div>
+
+    <p>This paragraph is outside the div.</p>
+
+ <title>Child Selector Example</title>
+
+    <style>
+        div > p {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+
+    <div>
+        <p>Direct child paragraph</p>
+
+        <section>
+            <p>Nested paragraph</p>
+        </section>
+    </div>
+
+    <p>Paragraph outside the div</p>
+
+ <title>Adjacent Sibling Selector Example</title>
+
+    <style>
+        h2 + p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+
+    <h2>Heading</h2>
+    <p>This paragraph comes immediately after the heading.</p>
+    <p>This is another paragraph.</p>
+
+ <title>General Sibling Selector Example</title>
+
+    <style>
+        h2 ~ p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+
+    body>
+
+    <h2>Heading</h2>
+
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+
+    <div>Some content</div>
+
+    <p>Third paragraph</p>
+
+<title>BORDERS AND BACKGROUNDS</title>
+// DIFFERENT BORDERS style
+
+<style>
+.solid {
+    border: 3px solid blue;
+}
+
+.dashed {
+    border: 3px dashed red;
+}
+
+.dotted {
+    border: 3px dotted green;
+}
+
+.double {
+    border: 5px double purple;
+}
+</style>
+</head>
+<body>
+<h2>Border Styles</h2>
+
+<p class="solid">Solid Border</p>
+<p class="dashed">Dashed Border</p>
+<p class="dotted">Dotted Border</p>
+<p class="double">Double Border</p>
+
+// different border colors
+
+<style>
+.red {
+    border: 3px solid red;
+}
+
+.green {
+    border: 3px solid green;
+}
+
+.blue {
+    border: 3px solid blue;
+}
+
+.orange {
+    border: 3px solid orange;
+}
+</style>
+
+<h2>Border Colors</h2>
+
+<div class="red">Red Border</div><br>
+<div class="green">Green Border</div><br>
+<div class="blue">Blue Border</div><br>
+<div class="orange">Orange Border</div>
+
+// Diferent Border widths
+<style>
+.thin {
+    border: 1px solid black;
+}
+
+.medium {
+    border: 4px solid black;
+}
+
+.thick {
+    border: 8px solid black;
+}
+</style>
+
+<h2>Border Widths</h2>
+
+<p class="thin">Thin Border (1px)</p>
+<p class="medium">Medium Border (4px)</p>
+<p class="thick">Thick Border (8px)</p>
+
+//  border-radius for creating rounded corners
+// rounded corners
+<style>
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+</style>
+
+<div class="box">
+    kamalakar (10px)
+</div>
+
+<style>
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 25px;
+}
+</style>
+
+<div class="box">
+    welcome to the city (25px)
+</div>
+
+// rounded button
+
+
+
+</body>
+</html>
+
