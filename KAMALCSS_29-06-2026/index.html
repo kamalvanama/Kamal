@@ -307,6 +307,188 @@
 
 // rounded button
 
+<style>
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+
+<button>Click Me</button>
+
+<title> background properties</title>
+
+<h1>background-color</h1>
+
+<style>
+p {
+    background-color: yellow;
+}
+</style>
+
+<p>This paragraph has a yellow background.</p>
+
+
+<style>
+body {
+    background-color: lightblue;
+}
+</style>
+
+<h1>Welcome!</h1>
+<p>The entire page has a light blue background.</p>
+
+<h2>Background image</h2>
+<style>
+body {
+    background-image: url("background.jpg");
+}
+</style>
+
+
+<h1>Welcome</h1>
+<p>This page has a background image.</p>
+
+<style>
+.box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("nature.jpg");
+}
+</style>
+
+<div class="box"></div>
+
+<h3>Repeat</h3>
+<style>
+body {
+    background-image: url("flower.jpg");
+    background-repeat: repeat;
+}
+</style>
+
+<h2>Background Repeat</h2>
+
+<style>
+body {
+    background-image: url("flower.jpg");
+    background-repeat: no-repeat;
+}
+</style>
+
+<h2>Background No Repeat</h2>
+
+<h3>Background position</h3>
+
+<style>
+.box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("flower.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+
+<div class="box"></div>
+
+<style>
+.box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("flower.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+</style>
+
+<div class="box"></div>
+
+<h4>Background size</h4>
+
+<style>
+.box {
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    background-image: url("nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<div class="box"></div>
+
+<title>width and height</title>
+
+<style>
+.container {
+    width: 80%;
+    max-width: 800px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+}
+</style>
+
+<div class="container">
+    Responsive Container
+</div>
+
+
+
+<style>
+.container1 {
+    width: 30%;
+    height: 120px;
+    background: lightcoral;
+    margin: 10px auto;
+}
+
+.container2 {
+    width: 60%;
+    height: 150px;
+    background: lightgreen;
+    margin: 10px auto;
+}
+
+.container3 {
+    width: 90%;
+    height: 180px;
+    background: lightblue;
+    margin: 10px auto;
+}
+
+div {
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+}
+.container2 {
+    line-height: 150px;
+}
+.container3 {
+    line-height: 180px;
+}
+</style>
+
+<div class="container1">30% Width</div>
+<div class="container2">60% Width</div>
+<div class="container3">90% Width</div>
+
+
 
 
 </body>
