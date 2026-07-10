@@ -4,7 +4,7 @@ import FragmentPage from "./pages_07-07-2026/fragments_07-07-2026/FragmentsPage"
 import JsxExpressionPage from "./pages_07-07-2026/jsxexpression_07-07-2026/jsxExpressionPage";
 import ReactStrictModePage from "./pages_07-07-2026/reactstrictmode_07-07-2026/ReactStrictModePage";
 import StatePage from "./pages_07-07-2026/State_07-07-2026/StatePage";
-import PropsPagee from "./pages_07-07-2026/props_07-07-2026/PropsPages";
+import PropsPage2 from "./pages_07-07-2026/Props_07-07-2026/PropsPages2";
 
 function App(){
   return (
@@ -16,7 +16,9 @@ function App(){
       <Route path='/jsx' element={<JsxExpressionPage/>}/>
       <Route path='/state' element={<StatePage/>}/>
       <Route path='/props' element={<PropsPage/>}/>
-      
+      <Route path='/props2' element={<PropsPage2/>}/>
+
+
     </Routes>
     </BrowserRouter>
   )
