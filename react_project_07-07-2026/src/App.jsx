@@ -9,6 +9,10 @@ import PropsPages from "./pages_07-07-2026/Props_10-07-2026/PropsPages";
 import CommunicationPage from "./pages_07-07-2026/ComponentsCommunications_13-07-2026/CommunicationPage";
 import ChildPage from "./pages_07-07-2026/Props_14-07-2026/ChildPage";
 import ParentPage from "./pages_07-07-2026/Props_14-07-2026/ParentPage";
+import StatePage28 from "./pages_07-07-2026/Props_28-07-2026/State_28-07-2026/StatePage28";
+import PropsPage1 from "./pages_07-07-2026/Props_28-07-2026/PropsPage1";
+import DynamicPage from "./pages_07-07-2026/Props_28-07-2026/Dynamic_28-07-2026/DynamicPage";
+import ComponentHiererchypage from "./pages_07-07-2026/Props_28-07-2026/ParentandChild Component Hierarchy/componentHierarchypage";
 
 function App(){
   return (
@@ -24,9 +28,14 @@ function App(){
       <Route path='/componentscommunication' element={<CommunicationPage/>}/>
       <Route path='/state' element={<StatePage/>}/>
       <Route path='/state' element={<StatePage/>}/>
-    <Routes path='/props' element={<ChildPage/>}/>
-    <Routes path='/props' element={<ParentPage/>}/>
-    
+    <Route path='/props' element={<ChildPage/>}/>
+    <Route path='/props' element={<ParentPage/>}/>
+    <Route path='/JsxExpression' element={<JsxExpressionPage/>}/>
+    <Route path='/Props' element={<PropsPage1/>}/>
+    <Route path='/State' element={<StatePage28/>}/>
+    <Route path='/Dynamic' element={<DynamicPage/>}/>
+    <Route path='/ComponentHierarchy' element={<ComponentHierarchypage/>}/>
+</Routes>
     </BrowserRouter>
   )
 }
