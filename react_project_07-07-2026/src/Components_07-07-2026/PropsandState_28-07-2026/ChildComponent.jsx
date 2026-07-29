@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function ChildComponent(props) {
   const [marks, setMarks] = useState(80);
 

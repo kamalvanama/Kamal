@@ -9,11 +9,10 @@ import PropsPages from "./pages_07-07-2026/Props_10-07-2026/PropsPages";
 import CommunicationPage from "./pages_07-07-2026/ComponentsCommunications_13-07-2026/CommunicationPage";
 import ChildPage from "./pages_07-07-2026/Props_14-07-2026/ChildPage";
 import ParentPage from "./pages_07-07-2026/Props_14-07-2026/ParentPage";
-import StatePage28 from "./pages_07-07-2026/Props_28-07-2026/State_28-07-2026/StatePage28";
+import StatePage28 from "./pages_07-07-2026/State_28-07-2026/StatePage28";
 import PropsPage1 from "./pages_07-07-2026/Props_28-07-2026/PropsPage1";
-import DynamicPage from "./pages_07-07-2026/Props_28-07-2026/Dynamic_28-07-2026/DynamicPage";
-import ComponentHiererchypage from "./pages_07-07-2026/Props_28-07-2026/ParentandChild Component Hierarchy/componentHierarchypage";
-
+import ComponentHiererchypage from "./pages_07-07-2026/ParentandChild Component Hierarchy/ComponentHierarchypage"
+import ChildIntractionPage from "./pages_07-07-2026/ChildToParent Communication_29-07-2026/ChildInteractionPage";
 function App(){
   return (
     <BrowserRouter>
@@ -29,12 +28,17 @@ function App(){
       <Route path='/state' element={<StatePage/>}/>
       <Route path='/state' element={<StatePage/>}/>
     <Route path='/props' element={<ChildPage/>}/>
-    <Route path='/props' element={<ParentPage/>}/>
+    <Route path='/props3' element={<ParentPage/>}/>
     <Route path='/JsxExpression' element={<JsxExpressionPage/>}/>
-    <Route path='/Props' element={<PropsPage1/>}/>
-    <Route path='/State' element={<StatePage28/>}/>
-    <Route path='/Dynamic' element={<DynamicPage/>}/>
-    <Route path='/ComponentHierarchy' element={<ComponentHierarchypage/>}/>
+    <Route path='/Props1' element={<PropsPage1/>}/>
+    <Route path='/State1' element={<StatePage28/>}/>
+    <Route path='/hierarchy' element={<ComponentHiererchypage/>}/>
+    <Route path='/Communication' element={<CommuincationPage29/>}/>
+    <Route path='/Child' element={<ChildPage/>}/>
+    <Route path='/Child' element={<CommunicationPage2/>}/>
+    <Route path='/interaction' element={<ChildIntractionPage/>}/>
+    <Route path='/ChildToChild' element={<ChlidPage2/>}/>
+    
 </Routes>
     </BrowserRouter>
   )

@@ -1,3 +1,5 @@
+import Student from "./Child28";
+
 function Parent28() {
   return (
     <div>

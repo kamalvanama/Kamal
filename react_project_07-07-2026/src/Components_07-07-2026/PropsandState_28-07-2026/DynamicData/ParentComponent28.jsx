@@ -1,3 +1,6 @@
+import { useState } from "react";
+import ChildComponent28 from "./ChildComponent28";
+
 function ParentComponent28() {
   const [count, setCount] = useState(0);
 
@@ -6,7 +9,7 @@ function ParentComponent28() {
       <h1>React Props and State Example</h1>
 
       {/* Dynamic data using Props */}
-      <Student name="Kamal" course="B.Sc Computers" />
+      <ChildComponent28 name="Kamal" course="B.Sc Computers" />
 
       {/* Dynamic data using State */}
       <h2>Counter: {count}</h2>

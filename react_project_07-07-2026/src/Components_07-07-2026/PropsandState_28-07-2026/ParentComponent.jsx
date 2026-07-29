@@ -1,9 +1,11 @@
-function Parent() {
+import ChildComponent from "./ChildComponent";
+
+function ParentComponent() {
   return (
     <div>
-      <Child name="Kamal" />
+      <ChildComponent name="Kamal" />
     </div>
   );
 }
 
-export default Parent;
+export default ParentComponent;
