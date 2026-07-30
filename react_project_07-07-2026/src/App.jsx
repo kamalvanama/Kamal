@@ -13,6 +13,9 @@ import StatePage28 from "./pages_07-07-2026/State_28-07-2026/StatePage28";
 import PropsPage1 from "./pages_07-07-2026/Props_28-07-2026/PropsPage1";
 import ComponentHiererchypage from "./pages_07-07-2026/ParentandChild Component Hierarchy/ComponentHierarchypage"
 import ChildIntractionPage from "./pages_07-07-2026/ChildToParent Communication_29-07-2026/ChildInteractionPage";
+import MiniprojectPage from "./pages_07-07-2026/MiniAssignment_30-07-2026/MiniprojectPage";
+import LocalStatePage30 from "./pages_07-07-2026/LocalState_30-07-2026/LocalStatePage30";
+import GlobalState from "./Components_07-07-2026/Global State_30-07-2026/GlobalState";
 function App(){
   return (
     <BrowserRouter>
@@ -38,6 +41,9 @@ function App(){
     <Route path='/Child' element={<CommunicationPage2/>}/>
     <Route path='/interaction' element={<ChildIntractionPage/>}/>
     <Route path='/ChildToChild' element={<ChlidPage2/>}/>
+    <Route path='/Miniproject' element={<MiniprojectPage/>}/>
+    <Route path='/LocalState' element={<LocalStatePage30/>}/>
+    <Route path='/GlobalState' element={<GlobalState/>}/>
     
 </Routes>
     </BrowserRouter>
